@@ -1,0 +1,50 @@
+.resultado {
+    border: 1px solid #D5F0F9;
+    border-radius: 30px;
+    
+    min-height: 50vh;
+    width: 50vw;
+
+    background-color: #fff;
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.cabeca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 40%;
+    font-size: 24px;
+
+    background-image: linear-gradient(#CEC3F5, #D5F0F9);
+}
+
+.corpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 1;
+}
+
+.total {
+    font-size: 4rem;
+
+    border: 3px solid #D5F0F9;
+    border-radius: 50%;
+
+    padding: 20px;
+    
+    aspect-ratio: 1/1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
