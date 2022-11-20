@@ -81,7 +81,7 @@ function App() {
       }
     });
     setResultado(total);
-    return null;
+    return 0;
   }
 
   return (
