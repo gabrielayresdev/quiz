@@ -79,6 +79,7 @@ function App() {
       if (pergunta.resposta === respostas[pergunta.id]) {
         total++;
       }
+      return 0;
     });
     setResultado(total);
   }
