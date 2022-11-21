@@ -1,10 +1,22 @@
 import React from 'react';
 import styles from './Pergunta.module.css';
 
-const Pergunta = ({ pergunta, opcoes, id, value, onChange, active }) => {
+const Pergunta = ({
+  pergunta,
+  opcoes,
+  id,
+  value,
+  onChange,
+  active,
+  slide,
+  totalDeSlides,
+}) => {
   if (!active) return null;
   return (
     <div className={styles.pergunta}>
+      <div className={styles.numeroDoSlide}>
+        {slide}/{totalDeSlides}
+      </div>
       <legend className={styles.pergunta_titulo}>{pergunta}</legend>
       <div className={styles.opcoes}>
         {opcoes.map((opcao) => (

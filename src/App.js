@@ -79,7 +79,6 @@ function App() {
       if (pergunta.resposta === respostas[pergunta.id]) {
         total++;
       }
-      return 0;
     });
     setResultado(total);
   }
@@ -96,6 +95,8 @@ function App() {
             id={pergunta.id}
             value={respostas[pergunta.id]}
             onChange={onChange}
+            slide={slide + 1}
+            totalDeSlides={perguntas.length}
           />
         ))}
         {resultado && (

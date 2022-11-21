@@ -8,10 +8,27 @@
     background-color: #fff;
     position: relative;
 
-    overflow: hidden;
 
     display: flex;
     flex-direction: column;
+}
+
+.numeroDoSlide {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+
+    font-size: 2rem;
+
+    background-color: #D5F0F9;
+    border: 3px solid #D5F0F9;
+    border-radius: 50%;
+
+    padding: 20px;
+    
+    aspect-ratio: 1/1;
+    z-index: 5;
 }
 
 .pergunta_titulo {
